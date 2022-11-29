@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Bootstrap CDN for CSS and Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js_leave" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+
+<body>
+    <br><br>
+    <section style="text-align: center;">
+    <center><p id="Member"></p></center>
+    <br><br><br>
+    </section>
+    <section style="text-align: center">
+    <H2>Are you sure you want to leave your group?</H2>
+
+    <!-- <form action="dashboard" method="POST">
+    <button type="submit" id="yes" class="btn btn-success">Yes</button>
+    </form>
+
+    <form action="dashboard" method="POST">
+    <button type="submit" id="no" class="btn btn-danger">No</button>
+    </form> -->
+    <button type="submit" id="yes" class="btn btn-success" onclick="myYes()">Yes</button>
+    <button type="submit" id="no" class="btn btn-danger" onclick="myNo()">No</button>
+
+    <H3 id="leave_succ"></H3>
+    </section>
+</body>
+</html>

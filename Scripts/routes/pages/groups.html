@@ -1,0 +1,69 @@
+<?php session_start();?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Bootstrap CDN for CSS and Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js_groups" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+<!-- <body> -->
+
+<body>
+    <?php 
+    //echo "SV is " . $_SESSION["user_id"];
+    ?>
+    <div class="container" style="margin-top: 30px;">
+        <div class="row align-items-center justify-content-center">
+            <h2 id="group"></h2>
+            <br>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-4">
+                <div class="row">
+                   <!-- <p id="groupTable"></p> -->
+                   <table class='table table-hover' id='t'>
+                       <thead class='thead-light'><tr><th>Course</th></tr></thead>
+                       <tr><td>CSE 448/449</td></tr>
+                       </table>
+                </div>
+                <br><br><br><br>
+                <div class="row">
+                    <button type="button" id="invitations" class="btn btn-light border">Group Invitations</button>
+                </div>
+                <br>
+                <div class="row">
+                    <p id="groupInvitations"></p>
+                </div>
+                <div class="row">
+                    <p id="print"></p>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="row">
+                    <form action="Invite" method="POST">
+                    <input type="submit" class="btn btn-success" value="Invite Member"></input>
+                    </form>
+                    <form action="leave" method="POST">
+                    <input type="submit" class="btn btn-danger" value="Leave Group"></input>
+                    </form>
+                </div>
+                <div class="row">
+                        <p id="Member"></p>
+                </div>
+                <div class="row">
+                    <p id="Bids"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

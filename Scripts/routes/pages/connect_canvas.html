@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Bootstrap CDN for CSS and Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/connect_canvas.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h3>Connect Canvas to Import Students</h3>
+            <br><br><br>
+        </div>
+        <div class="row justify-content-center">
+            <!-- This is where we allow the Professor to enter their Canvas token -->
+            <form action="" method="post">
+                Enter Canvas Access Token:
+                <br><br>
+                <input type="text" id="key" value="">
+                <br><br>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+            <!-- If successful, we should display "Success! Your students were added to our database. They can now register on this website." -->
+        </div>
+        <br><br>
+        <p id="output"></p>
+        <hr>
+        <br>
+        <div class="row justify-content-center"><b>Don't have a token?</b></div>
+        <div class="row justify-content-center">
+            1. Open your Canvas Portal<br>
+            2. Click on the "Acccount" navigation tab<br>
+            3. Click Settings<br>
+            4. Scroll down to the section "Approved Integrations"<br>
+            5. Click the "New Access Token" button<br>
+            6. Enter a Purpose and Expiration Date for the Access Token<br>
+            7. Click "Generate Token"<br>
+            8. Copy your new Access Token and paste it into the text field above
+        </div>
+        <br><br>
+        <div class="row justify-content-center"><b>Need to add more students later?</b></div>
+        <div class="row justify-content-center">
+            You can always come back and enter an API Key again to update the database with new students.
+        </div>
+    </div>
+</body>
+
+</html>
